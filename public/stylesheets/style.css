@@ -1,9 +1,64 @@
 body {
-  padding: 25px;
+  color: #e8e8e8;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  padding: 25px;
   text-align: center;
+  background: #1e1e1e;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
   color: #00b7ff;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ffcc20;
+  border-left: 5px solid #ffcc20;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.message__user,
+.message__date {
+  text-align: right;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > input {
+  width: 261px;
+  margin-bottom: 10px;
+}
+
+.form > textarea {
+  resize: none;
+}
+
+.btn-blue {
+  font-size: 20px;
+  background: #03a9f4;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.btn-blue:hover {
+  transform: scale(1.1);
+}
+
+.btn-blue:active {
+  transform: translateY(5px);
 }

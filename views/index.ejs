@@ -8,6 +8,14 @@
     <h1><%= title %></h1>
     <p>Welcome to the <%= title %></p>
 
-    <% %>
+    <a href="/new"><button class="btn-blue">Create a new post</button></a>
+    <% for(message of messages) {%>
+    <div class="message">
+      <p class="message__text"><%=message.text %></p>
+      <hr />
+      <p class="message__user">- by <%= message.user%></p>
+      <p class="message__date">Posted on <%= message.added%></p>
+    </div>
+    <% } %>
   </body>
 </html>
